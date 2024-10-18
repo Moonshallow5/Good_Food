@@ -1,0 +1,80 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "recipeName",
+              "type": "recipeType"
+            }
+          ],
+          "name": "ReadRecipeIntent",
+          "samples": [
+            "how do i make {recipeName}",
+            "give me the recipe for {recipeName}",
+            "what am i making",
+            "how do i cook this recipe",
+            "please read me this recipe"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "pasta"
+              }
+            },
+            {
+              "name": {
+                "value": "salad"
+              }
+            },
+            {
+              "name": {
+                "value": "omelette"
+              }
+            }
+          ],
+          "name": "recipeType"
+        }
+      ],
+      "invocationName": "read recipe intent"
+    }
+  }
+}
