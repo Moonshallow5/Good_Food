@@ -28,31 +28,8 @@ class MainActivity : ComponentActivity() {
             startActivity(intent)
         }
 
-        /*setContent {
-            Android_MapTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
-        }*/
+        
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello sandeep!",
-        modifier = modifier
-    )
-}
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Android_MapTheme {
-        Greeting("Android")
-    }
-}
