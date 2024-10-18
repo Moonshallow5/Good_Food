@@ -1,6 +1,9 @@
 # Good_Food
 
-![Main_vid](app/src/main/assets/vid.mp4)
+
+https://github.com/user-attachments/assets/7ef5a237-a510-4568-9cc3-dd8105e896d8
+
+
 
 
 ![First_pg](app/src/main/assets/home_pg1.jpg)
