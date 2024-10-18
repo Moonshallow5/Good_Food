@@ -6,9 +6,9 @@ https://github.com/user-attachments/assets/7ef5a237-a510-4568-9cc3-dd8105e896d8
 
 
 
-![First_pg](app/src/main/assets/home_pg1.jpg)
-![Second_pg](app/src/main/assets/second_pg2.jpg)
-![Third_pg](app/src/main/assets/third_pg3.jpg)
+![First_pg](app/src/main/assets/home_pg.jpg)
+![Second_pg](app/src/main/assets/second_pg.jpg)
+![Third_pg](app/src/main/assets/third_pg.jpg)
 
 
 
