@@ -39,11 +39,11 @@ class RecipeActivity: AppCompatActivity() {
             randomRecipe?.let {
                 val formmateddirections=it.directions.replace("[","")
                     .replace("]", "")  // Remove closing bracket
-                    .replace("'", "")  // Remove single quotes
+                    .replace("'", "")  
 
                 val formmatedingredients=it.ingredients.replace("[","")
                     .replace("]", "")  // Remove closing bracket
-                    .replace("'", "")  // Remove single quotes
+                    .replace("'", "")  
 
 
                 val intent = Intent(
@@ -66,11 +66,11 @@ class RecipeActivity: AppCompatActivity() {
             randomRecipe?.let {
                 val formmateddirections=it.directions.replace("[","")
                     .replace("]", "")  // Remove closing bracket
-                    .replace("'", "")  // Remove single quotes
+                    .replace("'", "")  
 
                 val formmatedingredients=it.ingredients.replace("[","")
                     .replace("]", "")  // Remove closing bracket
-                    .replace("'", "")  // Remove single quotes
+                    .replace("'", "")  
 
 
                 val intent = Intent(
@@ -94,11 +94,11 @@ class RecipeActivity: AppCompatActivity() {
             randomRecipe?.let {
                 val formmateddirections=it.directions.replace("[","")
                     .replace("]", "")  // Remove closing bracket
-                    .replace("'", "")  // Remove single quotes
+                    .replace("'", "")  
 
                 val formmatedingredients=it.ingredients.replace("[","")
                     .replace("]", "")  // Remove closing bracket
-                    .replace("'", "")  // Remove single quotes
+                    .replace("'", "")  
 
 
                 val intent = Intent(
@@ -122,7 +122,7 @@ class RecipeActivity: AppCompatActivity() {
 
     private fun loadRecipes() {
         // Load recipes from JSON file
-        val inputStream = assets.open("finalRecipes.json") // Adjust the path as necessary
+        val inputStream = assets.open("finalRecipes.json") 
         val reader = InputStreamReader(inputStream)
         val type = object : TypeToken<List<Recipe>>() {}.type
         recipes = Gson().fromJson(reader, type)
@@ -139,7 +139,7 @@ class RecipeActivity: AppCompatActivity() {
         }
     }
     private fun getRandomVegetarianRecipe(): Recipe? {
-        // Filter protein recipes and return a random one
+        // Filter veg recipes and return a random one
         val vegetarianRecipes = recipes.filter { it.category == "V" }
         return if (vegetarianRecipes.isNotEmpty()) {
             vegetarianRecipes[Random.nextInt(vegetarianRecipes.size)]
@@ -148,7 +148,7 @@ class RecipeActivity: AppCompatActivity() {
         }
     }
     private fun getRandomDesertRecipe(): Recipe? {
-        // Filter protein recipes and return a random one
+        // Filter  dessert recipes and return a random one
         val desertrecipe = recipes.filter { it.category == "D" }
         return if (desertrecipe.isNotEmpty()) {
             desertrecipe[Random.nextInt(desertrecipe.size)]
